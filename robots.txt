@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://darkdesertmedia.github.io/portfolio/sitemap.xml
+Sitemap: https://garrett-m-harper.github.io/sitemap.xml

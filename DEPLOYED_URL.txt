@@ -1,2 +1,2 @@
-https://darkdesertmedia.github.io/portfolio
-# Status: CONFIGURED_PLACEHOLDER (gh auth status unauthenticated; local git repo initialized on main; remote push and GitHub Pages activation pending gh auth login)
+https://garrett-m-harper.github.io/
+# Status: PENDING_GITHUB_AUTH (target repo: Garrett-M-Harper/Garrett-M-Harper.github.io; awaiting gh auth login device approval and GitHub Pages deployment)

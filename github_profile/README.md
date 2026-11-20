@@ -22,6 +22,6 @@ Operations, data systems, and technical proofreading specialist in Phoenix, AZ. 
 - **Limitoad & Armadimmer**: Lightweight Windows desktop utilities for real-time audio dynamic limiting and display luminance control during extended editorial and night-audit workflows.
 
 ## Live Portfolio and Contact
-- **Live Portfolio**: [https://darkdesertmedia.github.io/portfolio/](https://darkdesertmedia.github.io/portfolio/)
+- **Live Portfolio**: [https://garrett-m-harper.github.io/](https://garrett-m-harper.github.io/)
 - **Location**: Phoenix, AZ (Central Ave Corridor / 100% US Remote)
 - **Email**: [garrett.m.harper@gmail.com](mailto:garrett.m.harper@gmail.com)
