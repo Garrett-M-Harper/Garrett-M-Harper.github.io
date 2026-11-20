@@ -1,0 +1,86 @@
+name: Quality Gate and Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  quality-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run automated quality gate (em dashes, AI cliches, privacy, 100MB size limit)
+        run: |
+          python3 - <<'PY'
+          import os, re, sys
+          from pathlib import Path
+
+          root = Path(".")
+          max_bytes = 104857600
+          banned_words = [
+              "delve", "delves", "delving", "delved",
+              "tapestry", "tapestries",
+              "seamless", "seamlessly", "seamlessness",
+              "elevate", "elevates", "elevating", "elevated",
+              "unlock", "unlocks", "unlocking", "unlocked",
+          ]
+          banned_names = ["transcript", "statement_" + "of_earnings", "employment_verification", "tax_return", "paystub"]
+          errors = []
+
+          for dirpath, dirnames, filenames in os.walk(root):
+              dirnames[:] = [d for d in dirnames if d not in {".git", ".github", "__pycache__"}]
+              for fname in filenames:
+                  fp = Path(dirpath) / fname
+                  size = fp.stat().st_size
+                  if size >= max_bytes:
+                      errors.append(f"SIZE >= 100MB ({size} bytes): {fp}")
+                  lower_name = fname.lower()
+                  for term in banned_names:
+                      if term in lower_name:
+                          errors.append(f"SENSITIVE FILE: {fp}")
+                  if fp.suffix.lower() in {".html", ".js", ".json", ".md", ".txt", ".py", ".xml"}:
+                      text = fp.read_text(encoding="utf-8", errors="ignore")
+                      if "\u2014" in text or "&" + "mdash;" in text or "&#8212;" in text or "&#x2014;" in text:
+                          errors.append(f"EM DASH FOUND: {fp}")
+                      for w in banned_words:
+                          if re.search(rf"\b{w}\b", text, re.IGNORECASE):
+                              errors.append(f"AI CLICHE '{w}': {fp}")
+                      if re.search(r"\bnot\s+(?:only|just|merely|simply)\b[^.!?\n]*\bbut\b", text, re.IGNORECASE):
+                          errors.append(f"AI CLICHE CONSTRUCTION: {fp}")
+
+          if errors:
+              print("\n".join(errors))
+              sys.exit(1)
+          print("Quality gate passed: zero em dashes, zero AI cliches, zero sensitive files, all files < 100MB.")
+          PY
+
+  deploy:
+    needs: quality-gate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

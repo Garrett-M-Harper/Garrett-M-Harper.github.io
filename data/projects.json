@@ -1,0 +1,446 @@
+[
+  {
+    "id": "vendor-coi-w9-compliance-tracker",
+    "title": "Vendor COI & W-9 Compliance Tracker",
+    "discipline": "operations",
+    "disciplineLabel": "Operations & Administration",
+    "category": "Compliance & Accounts Payable",
+    "role": "Operations & Systems Lead",
+    "summary": "Three-tab compliance control workbook linking vendor insurance expiration, IRS W-9 verification, and QuickBooks accounts payable invoice gating.",
+    "tags": ["Excel", "INDEX/MATCH", "COI Tracking", "IRS W-9", "Accounts Payable", "QuickBooks"],
+    "metrics": [
+      "100% compliance gating before invoice release",
+      "30-day automated expiration warning horizon",
+      "3 integrated audit tabs"
+    ],
+    "highlights": [
+      "Dynamic TODAY() formula calculates days until COI expiration",
+      "INDEX/MATCH lookup automatically blocks invoice payment if COI expired or W-9 missing",
+      "Executive KPI dashboard with compliance counts and liability exposure totals"
+    ],
+    "media": {
+      "type": "table_preview",
+      "thumbnail": "assets/img/branding/logo.png",
+      "alt": "Vendor COI and W-9 Compliance Tracker Table Preview",
+      "downloadUrl": "samples/Vendor_COI_W9_Compliance_Tracker_Sample.xlsx"
+    },
+    "links": [
+      {
+        "label": "Download .XLSX Workbook",
+        "url": "samples/Vendor_COI_W9_Compliance_Tracker_Sample.xlsx",
+        "type": "download"
+      }
+    ],
+    "featured": true,
+    "order": 1
+  },
+  {
+    "id": "master-sku-inventory-reconciliation",
+    "title": "Master SKU & POS Inventory Reconciliation Workbook",
+    "discipline": "operations",
+    "disciplineLabel": "Operations & Administration",
+    "category": "Inventory & POS Control",
+    "role": "Operations & Systems Lead",
+    "summary": "Two-tab retail and e-commerce inventory audit model reconciling physical inventory counts against in-store POS and eBay fulfillment channels.",
+    "tags": ["Excel", "SUMIF / COUNTIF", "Inventory Audit", "POS Reconciliation", "Shrink Tracking", "E-Commerce"],
+    "metrics": [
+      "1,500+ monthly SKUs reconciled",
+      "Multi-channel POS and eBay synchronization",
+      "Automated shrink dollar variance detection"
+    ],
+    "highlights": [
+      "Category rollup sheet with dynamic SUMIF and COUNTIF formulas",
+      "Shrink dollar calculation pinpointing physical inventory variance",
+      "Conditional formatting alerts for units requiring immediate physical audit"
+    ],
+    "media": {
+      "type": "table_preview",
+      "thumbnail": "assets/img/branding/logo.png",
+      "alt": "Master SKU Inventory Reconciliation Table Preview",
+      "downloadUrl": "samples/Master_SKU_Inventory_Reconciliation_Sample.xlsx"
+    },
+    "links": [
+      {
+        "label": "Download .XLSX Workbook",
+        "url": "samples/Master_SKU_Inventory_Reconciliation_Sample.xlsx",
+        "type": "download"
+      }
+    ],
+    "featured": true,
+    "order": 2
+  },
+  {
+    "id": "rcrs-longitudinal-operations-database",
+    "title": "RCRS Longitudinal Operations & Health Database",
+    "discipline": "operations",
+    "disciplineLabel": "Operations & Administration",
+    "category": "Relational Systems & Compliance",
+    "role": "Operations & Systems Lead",
+    "summary": "Relational database architecture unifying intake records, regulatory compliance checklists, medical schedules, and automated operational alerts across five years of facility records.",
+    "tags": ["Database Architecture", "Salesforce CRM", "Relational Schema", "Regulatory Compliance", "Automated Alerts"],
+    "metrics": [
+      "300+ active profiles maintained",
+      "~25% annual operating cost reduction",
+      "5 years continuous data integrity"
+    ],
+    "highlights": [
+      "Unified intake records and compliance checklists into normalized tables",
+      "Built automated early-warning alerts for medical and compliance deadlines",
+      "Coordinated cross-functional facility data with zero downtime or audit failures"
+    ],
+    "media": {
+      "type": "image",
+      "thumbnail": "assets/img/branding/logo.png",
+      "alt": "RCRS Longitudinal Operations Database Schema"
+    },
+    "links": [
+      {
+        "label": "System Architecture Overview",
+        "url": "#systems",
+        "type": "demo"
+      }
+    ],
+    "featured": false,
+    "order": 3
+  },
+  {
+    "id": "sop-ops-042-vendor-payment-redline",
+    "title": "SOP-OPS-042 Vendor Payment & COI Gate Standard Redline Demonstration",
+    "discipline": "proofreading",
+    "disciplineLabel": "Technical Proofreading & Editorial QA",
+    "category": "Document Control & SOP Gating",
+    "role": "Technical Proofreader & Editorial QA Specialist",
+    "summary": "Interactive three-state redline demonstration showcasing Chicago Manual of Style compliance, regulatory precision, and unambiguous SOP terminology for accounts payable controls.",
+    "tags": ["Chicago Manual of Style", "SOP Gating", "Document Control", "Editorial QA", "Redline Tracking"],
+    "metrics": [
+      "6 critical drafting defects identified and resolved",
+      "100% adherence to Chicago style imperative voice",
+      "Zero ambiguity in compliance enforcement language"
+    ],
+    "highlights": [
+      "Eliminated homophone errors, colloquial phrasing, and ambiguous responsibilities",
+      "Standardized regulatory terminology including IRS Form W-9 and Certificate of Insurance",
+      "Added deterministic file-naming convention for automated audit archives"
+    ],
+    "media": {
+      "type": "table_preview",
+      "thumbnail": "assets/img/branding/logo.png",
+      "alt": "Interactive SOP Redline Demonstration Preview"
+    },
+    "links": [
+      {
+        "label": "Inspect Interactive Redline",
+        "url": "#proofreading",
+        "type": "demo"
+      }
+    ],
+    "featured": true,
+    "order": 4
+  },
+  {
+    "id": "strata-7x-blackbox",
+    "title": "STRATA 7X: BLACKBOX",
+    "discipline": "gamedev",
+    "disciplineLabel": "Game Development & Systems",
+    "category": "Game Architecture & Simulation",
+    "role": "Lead Developer & Systems Architect",
+    "summary": "Vertical salvage exploration game built in Godot 4.6 with Jolt Physics 3D, featuring custom acoustic wave propagation, volumetric thermal fields, and decoupled LiDAR telemetry.",
+    "tags": ["Godot 4.6", "GDScript", "Jolt Physics", "Acoustic Simulation", "Volumetric Fields", "3D Systems"],
+    "metrics": [
+      "Real-time FDTD acoustic corner bounce simulation",
+      "Decoupled LiDAR perception telemetry pipeline",
+      "Articulated KILN mech rig with multi-component damage physics"
+    ],
+    "highlights": [
+      "AcousticBus engine simulating sound occlusion and corner reflection in megastructure canyons",
+      "Volumetric 3D thermal air system influencing mech cooling and environmental hazards",
+      "Modular weapon and salvage hardpoints with deterministic trajectory calculations"
+    ],
+    "media": {
+      "type": "image",
+      "thumbnail": "assets/img/branding/logo.png",
+      "alt": "STRATA 7X: BLACKBOX Mech Simulator in Godot 4"
+    },
+    "links": [
+      {
+        "label": "Project Details",
+        "url": "#software",
+        "type": "demo"
+      }
+    ],
+    "featured": true,
+    "order": 5
+  },
+  {
+    "id": "arachnode",
+    "title": "Arachnode",
+    "discipline": "gamedev",
+    "disciplineLabel": "Game Development & Systems",
+    "category": "Desktop Productivity & Graph Engine",
+    "role": "Lead Developer & UI/UX Designer",
+    "summary": "Offline-first node-mapping desktop productivity application developed in Godot 4 for structuring complex multi-step workflows, relational logic, and administrative processes.",
+    "tags": ["Godot Engine", "GDScript", "SQLite", "Graph UI", "Desktop Application", "Offline-First"],
+    "metrics": [
+      "100% offline-first execution with local SQLite persistence",
+      "Custom graph view with unlimited node canvas navigation",
+      "Chaos fuzzer test suite ensuring zero-crash state preservation"
+    ],
+    "highlights": [
+      "Interactive visual graph system with dynamic edge routing and dependency tracking",
+      "Full undo and redo state stack with clipboard serialization",
+      "Lightweight executable footprint with zero cloud dependencies"
+    ],
+    "media": {
+      "type": "image",
+      "thumbnail": "assets/img/branding/arachnode_logo_BG.png",
+      "alt": "Arachnode Workflow Node Mapping Desktop Utility"
+    },
+    "links": [
+      {
+        "label": "Application Architecture",
+        "url": "#software",
+        "type": "demo"
+      }
+    ],
+    "featured": true,
+    "order": 6
+  },
+  {
+    "id": "limitoad",
+    "title": "Limitoad",
+    "discipline": "gamedev",
+    "disciplineLabel": "Game Development & Systems",
+    "category": "Audio DSP & Desktop Utility",
+    "role": "Audio Systems Developer",
+    "summary": "Real-time desktop audio limiter and compression tool engineered in Godot to prevent volume spikes and reduce ear fatigue during marathon editing and QA sessions.",
+    "tags": ["Audio DSP", "Godot 4", "Real-Time Limiter", "Windows Utility", "Audio QA"],
+    "metrics": [
+      "Zero audible clipping across dynamic media playback",
+      "Low-latency AudioBridge DSP loop",
+      "Transparent borderless utility window"
+    ],
+    "highlights": [
+      "Real-time peak detection with adjustable threshold and release curves",
+      "Transparent floating UI designed to sit non-intrusively above DAW or browser windows",
+      "Prevents harsh acoustic transients when reviewing unmastered dialogue and audio tracks"
+    ],
+    "media": {
+      "type": "image",
+      "thumbnail": "assets/img/branding/Limitoad_BLACK.png",
+      "alt": "Limitoad Real-Time Desktop Audio Limiter"
+    },
+    "links": [
+      {
+        "label": "Utility Overview",
+        "url": "#software",
+        "type": "demo"
+      }
+    ],
+    "featured": false,
+    "order": 7
+  },
+  {
+    "id": "armadimmer",
+    "title": "Armadimmer",
+    "discipline": "gamedev",
+    "disciplineLabel": "Game Development & Systems",
+    "category": "Display Control & Desktop Utility",
+    "role": "Developer",
+    "summary": "Transparent desktop utility providing granular display luminance reduction, redshift color curves, and customizable visual overlays for extended night sessions.",
+    "tags": ["Display Utility", "Godot Engine", "Visual Comfort", "Color Temperature", "Night Operations"],
+    "metrics": [
+      "Granular 1% to 100% brightness stepping",
+      "Custom redshift color temperature curves",
+      "Zero perceptible display latency"
+    ],
+    "highlights": [
+      "Transparent click-through overlay architecture",
+      "Smooth tint adjustments for high-contrast dark environments",
+      "Minimal CPU memory footprint below 30MB"
+    ],
+    "media": {
+      "type": "image",
+      "thumbnail": "assets/img/branding/logo.png",
+      "alt": "Armadimmer PC Display Dimming Tool"
+    },
+    "links": [
+      {
+        "label": "Utility Overview",
+        "url": "#software",
+        "type": "demo"
+      }
+    ],
+    "featured": false,
+    "order": 8
+  },
+  {
+    "id": "desperate-treasures",
+    "title": "Desperate Treasures 0.00",
+    "discipline": "gamedev",
+    "disciplineLabel": "Game Development & Systems",
+    "category": "Game Architecture & State Systems",
+    "role": "Lead Developer",
+    "summary": "Modular action RPG game framework in Godot 4.6 featuring a centralized event broker architecture, overworld streaming, and extensible skill web progression.",
+    "tags": ["Godot 4.6", "Event Broker", "State Management", "Jolt Physics", "Modular Systems"],
+    "metrics": [
+      "Decoupled event broker architecture (NervousSystem)",
+      "Dynamic skill web manager supporting branching talent paths",
+      "Centralized GameState persistence engine"
+    ],
+    "highlights": [
+      "Centralized event dispatcher reducing inter-module coupling across systems",
+      "Modular overworld streaming supporting continuous coordinate transitions",
+      "Structured game database architecture separating logic from item definition tables"
+    ],
+    "media": {
+      "type": "image",
+      "thumbnail": "assets/img/branding/logo.png",
+      "alt": "Desperate Treasures 0.00 Game Framework"
+    },
+    "links": [
+      {
+        "label": "Architecture Overview",
+        "url": "#software",
+        "type": "demo"
+      }
+    ],
+    "featured": false,
+    "order": 9
+  },
+  {
+    "id": "stray-cafe-brand-launch",
+    "title": "Stray Cafe 2026 Brand Launch",
+    "discipline": "creative_media",
+    "disciplineLabel": "Creative Media & Audio Production",
+    "category": "Commercial Launch & Media Production",
+    "role": "Creative Director & Media Producer",
+    "summary": "Comprehensive commercial brand rollout including pre-opening strategy, print prepress quality assurance, multi-platform video campaigns, and on-site AV installation.",
+    "tags": ["Brand Strategy", "Print Prepress QA", "Adobe Premiere Pro", "Paid Media Analytics", "AV Production"],
+    "metrics": [
+      "Multi-platform video campaign reaching local market",
+      "100% zero-defect print collateral delivered for opening",
+      "Complete on-site AV and lighting installation"
+    ],
+    "highlights": [
+      "Prepress review of physical menus, signage, and promotional banners ensuring exact color separation",
+      "Directed short-form video production across YouTube, TikTok, and Facebook",
+      "Configured venue sound and visual playback systems for opening night launch"
+    ],
+    "media": {
+      "type": "image",
+      "thumbnail": "assets/img/branding/logo.png",
+      "alt": "Stray Cafe Commercial Brand Launch Collateral"
+    },
+    "links": [
+      {
+        "label": "Campaign Overview",
+        "url": "#media",
+        "type": "demo"
+      }
+    ],
+    "featured": true,
+    "order": 10
+  },
+  {
+    "id": "just-some-guy-audiobook",
+    "title": "Just Some Guy (386-Page Audiobook)",
+    "discipline": "creative_media",
+    "disciplineLabel": "Creative Media & Audio Production",
+    "category": "Audio Production & Voice Direction",
+    "role": "Audiobook Producer, Voice Director & Lead Audio Engineer",
+    "summary": "Full-cast commercial audiobook production directing six voice actors across ten characters, with complete dialogue editorial QA, custom foley design, and master mastering.",
+    "tags": ["Audiobook Production", "Voice Direction", "Dialogue Editing", "Foley Design", "DAW Mastering", "ACX QA"],
+    "metrics": [
+      "386 pages of complex manuscript recorded and mastered",
+      "6 voice actors directed across 10 distinct character roles",
+      "100% compliance with ACX and commercial audio loudness standards"
+    ],
+    "highlights": [
+      "Directed multi-actor studio sessions with meticulous continuity and pronunciation logs",
+      "Performed fine-grain breath control, noise reduction, and transient removal",
+      "Engineered balanced soundscapes, custom foley elements, and final audio mastering"
+    ],
+    "media": {
+      "type": "image",
+      "thumbnail": "assets/img/branding/logo.png",
+      "alt": "Just Some Guy Commercial Audiobook Production"
+    },
+    "links": [
+      {
+        "label": "Audio Production Overview",
+        "url": "#media",
+        "type": "demo"
+      }
+    ],
+    "featured": true,
+    "order": 11
+  },
+  {
+    "id": "i-am-ctrl-book-1",
+    "title": "I AM CTRL: Book I",
+    "discipline": "creative_media",
+    "disciplineLabel": "Creative Media & Audio Production",
+    "category": "Novel Manuscript & Editorial Continuity",
+    "role": "Author & Editorial QA Lead",
+    "summary": "Full-length science fiction novel manuscript completed with rigorous structural editing, Chicago Manual of Style proofreading, and publication-ready typographic formatting.",
+    "tags": ["Structural Editing", "Manuscript Preparation", "Chicago Manual of Style", "Typography", "Document Control"],
+    "metrics": [
+      "Complete full-length manuscript written and edited",
+      "Multi-arc narrative continuity tracking across chapters",
+      "Print and digital typographic typesetting"
+    ],
+    "highlights": [
+      "Maintained exhaustive character, timeline, and world-building continuity documentation",
+      "Applied strict line-by-line editorial proofreading for voice and pacing",
+      "Structured publication-ready interior formatting compliant with commercial standards"
+    ],
+    "media": {
+      "type": "image",
+      "thumbnail": "assets/img/branding/logo.png",
+      "alt": "I AM CTRL Book I Manuscript Cover"
+    },
+    "links": [
+      {
+        "label": "Publication Details",
+        "url": "#media",
+        "type": "demo"
+      }
+    ],
+    "featured": false,
+    "order": 12
+  },
+  {
+    "id": "midnight-miniatures",
+    "title": "Midnight Miniatures",
+    "discipline": "creative_media",
+    "disciplineLabel": "Creative Media & Audio Production",
+    "category": "Digital Video & Short-Form Production",
+    "role": "Video Editor & Motion Designer",
+    "summary": "Episodic digital video production series featuring rapid-cadence reviews, custom motion graphics, sound design, and color grading for online audiences.",
+    "tags": ["Video Editing", "Motion Graphics", "Sound Design", "Color Grading", "Digital Media"],
+    "metrics": [
+      "Consistent episodic production schedule",
+      "Integrated custom branding graphics and transparent alpha overlays",
+      "Optimized multi-track audio mix with voice normalization"
+    ],
+    "highlights": [
+      "Developed signature visual style with high-contrast motion cards",
+      "Engineered clear vocal clarity using specialized equalization and dynamic compression",
+      "Standardized asset pipelines for rapid turnaround between review concepts and finished uploads"
+    ],
+    "media": {
+      "type": "image",
+      "thumbnail": "assets/img/creative/midnight_mini_reviews.png",
+      "alt": "Midnight Miniatures Digital Video Production"
+    },
+    "links": [
+      {
+        "label": "Series Overview",
+        "url": "#media",
+        "type": "demo"
+      }
+    ],
+    "featured": false,
+    "order": 13
+  }
+]
