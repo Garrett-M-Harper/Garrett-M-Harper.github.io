@@ -3,3 +3,7 @@ __pycache__/
 *$py.class
 .DS_Store
 Thumbs.db
+ASSET_STAGING_MANIFEST.md
+DEPLOYED_URL.txt
+DEPLOY_INSTRUCTIONS.md
+github_profile/
